@@ -12,7 +12,6 @@ geo-update-interval: 168
 external-controller: '127.0.0.1:9090'
 secret: 'Hpp@19921992'
 external-ui: ui
-# external-ui-url: 'https://github.com/haishanh/yacd/archive/gh-pages.zip'
 external-ui-url: 'https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip'
 external-controller-cors:
   allow-origins: ['*']
@@ -33,10 +32,10 @@ dns:
     - 'https://8.8.8.8/dns-query'
     - 'https://dns.quad9.net/dns-query'
   proxy-server-nameserver:
-    - '178.22.122.100' # شکن
-    - '185.51.200.2'   # شکن
-    - '10.202.10.10'   # رادار
-    - '10.202.10.11'   # رادار
+    - '178.22.122.100'
+    - '185.51.200.2'
+    - '10.202.10.10'
+    - '10.202.10.11'
   nameserver-policy:
     'domain:+.ir': [proxy-server-nameserver]
     'all': [nameserver]
@@ -71,6 +70,7 @@ sniffer:
       ports: [443, 8443, 2053, 2083, 2087, 2096]
     QUIC:
       ports: [443, 8443]
+
 proxies:
   - name: "MEHMMET 🥂✨ 01"
     type: ss
@@ -223,6 +223,7 @@ proxies:
       skip-cert-verify: true
       mux: false
 
+proxy-groups:
   - name: "CAYEN ♣️🍷 T"
     type: select
     proxies:
@@ -240,9 +241,6 @@ proxies:
       - "MEHMMET 🥂✨ 09"
       - "MEHMMET 🥂✨ 10"
 
-
-
-
   - name: "Zero 🫆 Touch"
     type: url-test
     url: "http://www.google.com/generate_204"
@@ -259,7 +257,6 @@ proxies:
       - "MEHMMET 🥂✨ 08"
       - "MEHMMET 🥂✨ 09"
       - "MEHMMET 🥂✨ 10"
-
 
   - name: "Server 💻 Vault"
     type: select
@@ -291,7 +288,6 @@ proxies:
       - "MEHMMET 🥂✨ 08"
       - "MEHMMET 🥂✨ 09"
       - "MEHMMET 🥂✨ 10"
-
 
 rule-providers:
   malware:
