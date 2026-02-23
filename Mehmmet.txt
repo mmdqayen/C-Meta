@@ -227,21 +227,11 @@ proxy-groups:
   - name: "CAYEN ♣️🍷 T"
     type: select
     proxies:
-      - "Zero 🫆 Touch"
+      - "Zero 🥶 Touch"
       - "Server 💻 Vault"
-      - "Pulse 🫀 Check"	  
-      - "MEHMMET 🥂✨ 01"
-      - "MEHMMET 🥂✨ 02"
-      - "MEHMMET 🥂✨ 03"
-      - "MEHMMET 🥂✨ 04"
-      - "MEHMMET 🥂✨ 05"
-      - "MEHMMET 🥂✨ 06"
-      - "MEHMMET 🥂✨ 07"
-      - "MEHMMET 🥂✨ 08"
-      - "MEHMMET 🥂✨ 09"
-      - "MEHMMET 🥂✨ 10"
+      - "Pulse 🫀 Check"
 
-  - name: "Zero 🫆 Touch"
+  - name: "Zero 🥶 Touch"
     type: url-test
     url: "http://www.google.com/generate_204"
     interval: 25
