@@ -212,6 +212,64 @@ proxies:
       skip-cert-verify: true
       mux: false
 
+  - name: "Mehmmet-Ai 🧠 1"
+    type: trojan
+    server: 162.159.41.96
+    port: 443
+    password: 4fbe0390-0262-4a67-a9a1-10776bc7a09e
+    sni: "dr-anv.ccwu.cc"
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        host: dr-anv.ccwu.cc
+
+  - name: "Mehmmet-Ai 🧠 2"
+    type: trojan
+    server: 162.159.44.209
+    port: 443
+    password: 4fbe0390-0262-4a67-a9a1-10776bc7a09e
+    sni: "dr-anv.ccwu.cc"
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        host: dr-anv.ccwu.cc
+
+  - name: "Mehmmet-Ai 🧠 3"
+    type: vless
+    server: 104.17.54.134
+    port: 443
+    uuid: 4fbe0390-0262-4a67-a9a1-10776bc7a09e
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: "dr-anv.ccwu.cc"
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        host: dr-anv.ccwu.cc
+
+  - name: "Mehmmet-Ai 🧠 4"
+    type: vless
+    server: 104.19.166.61
+    port: 443
+    uuid: 4fbe0390-0262-4a67-a9a1-10776bc7a09e
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: "dr-anv.ccwu.cc"
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        host: dr-anv.ccwu.cc
+
 proxy-groups:
   - name: "CAYEN ♣️🍷 T"
     type: select
@@ -236,6 +294,10 @@ proxy-groups:
       - "MEHMMET 🥂✨ 08"
       - "MEHMMET 🥂✨ 09"
       - "MEHMMET 🥂✨ 10"
+      - "Mehmmet-Ai 🧠 1"
+      - "Mehmmet-Ai 🧠 2"
+      - "Mehmmet-Ai 🧠 3"
+      - "Mehmmet-Ai 🧠 4"
 
   - name: "Server 💻 Vault"
     type: select
@@ -250,6 +312,10 @@ proxy-groups:
       - "MEHMMET 🥂✨ 08"
       - "MEHMMET 🥂✨ 09"
       - "MEHMMET 🥂✨ 10"
+      - "Mehmmet-Ai 🧠 1"
+      - "Mehmmet-Ai 🧠 2"
+      - "Mehmmet-Ai 🧠 3"
+      - "Mehmmet-Ai 🧠 4"
 
   - name: "Pulse 🫀 Check"
     type: load-balance
@@ -267,6 +333,10 @@ proxy-groups:
       - "MEHMMET 🥂✨ 08"
       - "MEHMMET 🥂✨ 09"
       - "MEHMMET 🥂✨ 10"
+      - "Mehmmet-Ai 🧠 1"
+      - "Mehmmet-Ai 🧠 2"
+      - "Mehmmet-Ai 🧠 3"
+      - "Mehmmet-Ai 🧠 4"
 
 rules:
   - RULE-SET,geolocation-cn,Zero 🥶 Touch
