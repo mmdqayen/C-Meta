@@ -270,6 +270,80 @@ proxies:
       headers:
         host: dr-anv.ccwu.cc
 
+  - name: "Mehmmet-Ai 🧠 5"
+    type: vless
+    server: 104.19.53.186
+    port: 443
+    uuid: 4fbe0390-0262-4a67-a9a1-10776bc7a09e
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: "dr-anv.ccwu.cc"
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        host: dr-anv.ccwu.cc
+
+  - name: "Mehmmet-Ai 🧠 6"
+    type: vless
+    server: 104.17.184.224
+    port: 443
+    uuid: 4fbe0390-0262-4a67-a9a1-10776bc7a09e
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: "dr-anv.ccwu.cc"
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        host: dr-anv.ccwu.cc
+
+  - name: "Mehmmet-Ai 🧠 7"
+    type: vless
+    server: 104.17.116.122
+    port: 443
+    uuid: 4fbe0390-0262-4a67-a9a1-10776bc7a09e
+    tls: true
+    tfo: false
+    skip-cert-verify: false
+    servername: "dr-anv.ccwu.cc"
+    client-fingerprint: chrome
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        host: dr-anv.ccwu.cc
+
+  - name: "Mehmmet-Ai 🧠 8"
+    type: trojan
+    server: 104.17.184.38
+    port: 443
+    password: 4fbe0390-0262-4a67-a9a1-10776bc7a09e
+    sni: "dr-anv.ccwu.cc"
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        host: dr-anv.ccwu.cc
+
+  - name: "Mehmmet-Ai 🧠 9"
+    type: trojan
+    server: 104.17.188.142
+    port: 443
+    password: 4fbe0390-0262-4a67-a9a1-10776bc7a09e
+    sni: "dr-anv.ccwu.cc"
+    skip-cert-verify: false
+    network: ws
+    ws-opts:
+      path: "/?ed=2048"
+      headers:
+        host: dr-anv.ccwu.cc
+
 proxy-groups:
   - name: "CAYEN ♣️🍷 T"
     type: select
@@ -298,6 +372,11 @@ proxy-groups:
       - "Mehmmet-Ai 🧠 2"
       - "Mehmmet-Ai 🧠 3"
       - "Mehmmet-Ai 🧠 4"
+      - "Mehmmet-Ai 🧠 5"
+      - "Mehmmet-Ai 🧠 6"
+      - "Mehmmet-Ai 🧠 7"
+      - "Mehmmet-Ai 🧠 8"
+      - "Mehmmet-Ai 🧠 9"
 
   - name: "Server 💻 Vault"
     type: select
@@ -316,6 +395,11 @@ proxy-groups:
       - "Mehmmet-Ai 🧠 2"
       - "Mehmmet-Ai 🧠 3"
       - "Mehmmet-Ai 🧠 4"
+      - "Mehmmet-Ai 🧠 5"
+      - "Mehmmet-Ai 🧠 6"
+      - "Mehmmet-Ai 🧠 7"
+      - "Mehmmet-Ai 🧠 8"
+      - "Mehmmet-Ai 🧠 9"
 
   - name: "Pulse 🫀 Check"
     type: load-balance
@@ -337,6 +421,11 @@ proxy-groups:
       - "Mehmmet-Ai 🧠 2"
       - "Mehmmet-Ai 🧠 3"
       - "Mehmmet-Ai 🧠 4"
+      - "Mehmmet-Ai 🧠 5"
+      - "Mehmmet-Ai 🧠 6"
+      - "Mehmmet-Ai 🧠 7"
+      - "Mehmmet-Ai 🧠 8"
+      - "Mehmmet-Ai 🧠 9"
 
 rules:
   - RULE-SET,geolocation-cn,Zero 🥶 Touch
